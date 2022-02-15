@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+{%block content%}
+
+{% comment %} <section id = 'predictor'> {% endcomment %}
+    {% comment %} <div id = 'pr-img'> {% endcomment %}
+<link rel="stylesheet" href="{%static 'styles/form.css/'%}">
+    <div id = "di">
+        <form method="POST", method = "get",enctype="multipart/form-data">
+            {% csrf_token %}
+            <h2> Jays' Prediction Model </h2>
+            <div class="row g-3">
+                <div class="col">
+                    {{a.as_p}}
+                    <div id="oo">
+                        <div id = "a">
+                            <button><a href="">< Back</button></a>
+                        </div>
+                        <div id="b">
+                            <input type = "submit">
+                        </div>
+                    <div>
+                </div>
+            </div>
+            </form>
+    <div>
+    {% comment %} </div> {% endcomment %}
+{% comment %} </section> {% endcomment %}
+
+{% endblock %}

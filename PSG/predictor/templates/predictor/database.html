@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% load static %}
+{%block content%}
+
+<link rel="stylesheet" href="{%static 'styles/db.css/'%}">
+<div id = "tcont">
+    <div id = "table">
+        <table>
+
+            <tr>
+
+                <th>competition</th>
+                <th>Win or Lose </th>
+                <th><th>
+
+            </tr>
+            {% for i in result %}
+            <tr>
+
+
+                <td>{{i.competition}}</td>
+                <td id = "tdw" >{% if i.win_or_lose == 1 %}
+                Winn!!{% elif i.win_or_lose == 2 %} Lose!! {% else  %} Daw!! {%endif%}</td>
+                <td><a href="/predictor/delete/{{i.id}}">Delete</a>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

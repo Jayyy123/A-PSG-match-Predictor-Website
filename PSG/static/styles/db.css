@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(31, 37, 37);
+    background-repeat: no-repeat;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+#tcont{
+
+    background-image: url("/static/images/580b57fcd9996e24bc43c4d8.png");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 500px;
+    height: 500px;
+  }
+  #table{
+      color: rgb(207, 200, 188);
+      background-color: rgb(1, 9, 15);
+
+  }
+  #tdw{
+      size: 100px;
+  }

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(56, 56, 71), dodgerblue);
+    
+  }
+  #di{
+    background: url("/static/images/580b57fcd9996e24bc43c4d8.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 166, 0);
+    justify-items: center;
+    align-content: center;
+  }
+  #oo{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+  }
+  .center {
+    position: relative;
+    padding: 50px 50px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .center h1 {
+    font-size: 2em;
+    border-left: 5px solid dodgerblue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .center .inputbox {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  .center .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  .center .inputbox:last-child {
+    margin-bottom: 0;
+  }
+  .center .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+  }
+  .center .inputbox input:focus ~ span,
+  .center .inputbox input:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+  }
+  .center .inputbox [type="button"] {
+    width: 50%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+  }
+  .center .inputbox:hover [type="button"] {
+    background: linear-gradient(45deg, rgb(50, 47, 255), dodgerblue);
+  }
+  #loginU {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #in{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  #user{
+    padding-right: 10px;
+  }
+  #jpm{
+    margin-left: 50px;
+  }
+  #q{
+    margin-left: 20px;
+  }
+  #sh{
+    color: rgb(167, 73, 73);
+  }
+  #confirm{
+    margin-right: 15px;
+  }
+  #tcont{
+
+    background-image: url("/static/images/580b57fcd9996e24bc43c4d8.png");
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  #table{
+    background-color: black;
+    width: 700px;
+    height: 700px;
+  }

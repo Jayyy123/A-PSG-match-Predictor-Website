@@ -1,0 +1,37 @@
+{% extends 'main.html' %}
+{% load static %}
+{%block content%}
+
+<link rel="stylesheet" href="{%static 'styles/form.css/'%}">
+<form method="POST", method = "get",enctype="multipart/form-data">
+    {% csrf_token %}
+     <h2 id= "jpm">Jays' Prediction Model</h2>
+    <div id= "loginU">
+    <div class="row g-3">
+        <div class="col">
+            <div id='inn'>
+                <div id= "user1">
+                    First name: {{a.first_name}}
+                </div>
+                <div id= "userl">
+                    Last name: {{a.last_name}}
+                </div>
+                <div id= "usern">
+                    username: {{a.username}}
+                </div>
+                <div id= 'pww'>
+                    <div id = "pw1">
+                        Password: {{a.password1}}
+                    </div>
+                    <div id = "pw2">
+                        <span id = "confirm">Confirm:</span> {{a.password2}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id= "subm" type = "submit" value = "Signin">
+    </div>
+    </div>
+</form>
+
+{% endblock %}
